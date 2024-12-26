@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100% }
 body {
   -webkit-font-smoothing: subpixel-antialiased;
   font-family: "Georgia", sans-serif !important;
@@ -39,7 +39,7 @@ body {
     }
   }
   .kpiCard {
-      background-color: #fbfbff;
+      background-color: #ececf1;
       padding: 45px;
       margin-bottom: 18px;
       box-shadow: 0px 0px 16px #0000001f;
@@ -51,7 +51,7 @@ body {
         display: block;
         padding: 9px 0px;
         font-weight: 700;
-        color: #445871;
+        color: #374e69;
         width: 100%;
         text-align: center;
       }

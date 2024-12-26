@@ -1,10 +1,10 @@
 .nav-spacer {
   flex: 1 1 auto;
-  font-size: 20px;
+  font-size: 28px;
   padding-left: 9px;
-  font-family: Figtree;
-  letter-spacing: 1px;
-  font-weight: 600;
+  font-family: 'Montserrat';
+  letter-spacing: 2px;
+  font-weight: 1000;
   color: #445871;
   span {
     padding-left: 15px;
@@ -32,16 +32,17 @@
     height: 100%;
   }
   button.nav-buttons {
-    background-color: transparent;
+    background-color: rgb(246, 254, 255);
     border: 0;
     cursor: pointer;
     margin: 0;
     height: 100%;
-    padding: 10px;
-    font-size: 16px;
+    padding: 20px;
+    font-weight: 1000;
+    font-size: 20px;
   }
   button.nav-buttons:hover {
-    background-color: #005b6b1a;
+    background-color: #20b2aa;
   }
   button.navMenuButton {
     position: fixed;
@@ -64,14 +65,14 @@
     background-color: white;
     width: 100%;
     top: 55px;
-    height: 120px !important;
+    height: 150px !important;
   }
   button.nav-buttons {
     display: block;
     width: 100%;
     text-align: right;
-    height: 40px !important;
+    height: 35px !important;
     padding: 5px !important;
-    border-top: 1px solid #00000005 !important;
+    border-top: 2px solid #00000005 !important;
   }
 }
