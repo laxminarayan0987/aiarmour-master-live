@@ -1,15 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100% }
+html, body { height: 100%
+}
 body {
+
+    ::-webkit-scrollbar {
+      width: 6px !important; /* Set the width for vertical scrollbars */
+      height: 6px !important; /* Set the height for horizontal scrollbars */
+    }
+
+    /* Style for the scrollbar track (background) */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Light gray background for the track */
+      border-radius: 10px; /* Optional: rounded corners */
+    }
+
+    /* Style for the scrollbar thumb (the draggable part) */
+    ::-webkit-scrollbar-thumb {
+      background: #003B6A; /* Gray color for the thumb */
+      border-radius: 10px; /* Optional: rounded corners */
+    }
+
+    /* Style for the scrollbar thumb on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; /* Darker gray when hovering */
+    }
   -webkit-font-smoothing: subpixel-antialiased;
   font-family: "Georgia", sans-serif !important;
   letter-spacing: 0.5px !important;
   padding-top: 55px !important;
   font-size: 15px !important;
   .app-body {
-    height: calc(100% - 55px);
+    height: calc(100% - 70px);
     overflow: auto;
+    margin-top: 10px;
   }
   .componentUs {
     .componentGroup {

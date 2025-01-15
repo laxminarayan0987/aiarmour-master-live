@@ -32,17 +32,16 @@
     height: 100%;
   }
   button.nav-buttons {
-    background-color: rgb(246, 254, 255);
+    background-color: transparent;
     border: 0;
     cursor: pointer;
     margin: 0;
     height: 100%;
     padding: 20px;
-    font-weight: 1000;
-    font-size: 20px;
+    font-size: 18px;
   }
   button.nav-buttons:hover {
-    background-color: #20b2aa;
+    background-color: #13bfb563;
   }
   button.navMenuButton {
     position: fixed;
