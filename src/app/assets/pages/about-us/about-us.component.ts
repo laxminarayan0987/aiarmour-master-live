@@ -56,16 +56,14 @@ export class AboutUsComponent {
         },
       ]
     },
-   
+
   ];
   public cardClass = "";
   constructor() {
-    console.log('Component initialized');
     const numberOfCources = this.aboutUsKpi.length;
     if (numberOfCources <= 15) {
       this.cardClass = "col-md-12" + (12/numberOfCources)
     }
     else this.cardClass = "col-md-4";
-    console.log(this.cardClass)
   }
 }

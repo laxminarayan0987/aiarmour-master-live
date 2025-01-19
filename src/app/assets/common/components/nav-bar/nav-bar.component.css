@@ -65,6 +65,7 @@
     width: 100%;
     top: 55px;
     height: 150px !important;
+    z-index: 100;
   }
   button.nav-buttons {
     display: block;

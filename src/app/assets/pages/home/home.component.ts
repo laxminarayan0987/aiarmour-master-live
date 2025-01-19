@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { internship } from '../../../../assets/configurations/internships'
 import { CommonModule } from '@angular/common';
+import { GlobalService } from '../../services/common/global.service';
 
 @Component({
   selector: 'app-home',
@@ -21,11 +22,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   intervalId: any;
   public internships = internship;
 
-  constructor() { }
+  constructor(public globalService: GlobalService) { }
 
 ngOnInit(): void {
   this.startInterval();
-  console.log(this.internships)
 }
 startInterval() {
   this.intervalId = setInterval(() => {

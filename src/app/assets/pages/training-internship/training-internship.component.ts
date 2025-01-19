@@ -13,12 +13,10 @@ export class TrainingInternshipComponent {
   public courceDetails = internship;
   public cardClass = "";
   constructor() {
-    console.log('Component initialized');
     const numberOfCources = this.courceDetails.length;
     if (numberOfCources <= 3) {
       this.cardClass = "col-md-" + (12/numberOfCources)
     }
     else this.cardClass = "col-xl-4 col-lg-6 col-md-6";
-    console.log(this.cardClass)
   }
 }

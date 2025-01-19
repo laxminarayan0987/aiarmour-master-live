@@ -4,6 +4,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { GlobalService } from '../../../services/common/global.service';
+
 
 @Component({
   selector: 'app-nav-bar',
@@ -13,7 +15,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private globalService: GlobalService) {}
   hidemenu: boolean = true;
   navigateTo (pageName: string) {
     this.hidemenu = true;
@@ -21,5 +23,6 @@ export class NavBarComponent {
   }
   toggleNavMenu() {
     this.hidemenu = !this.hidemenu;
+    this.globalService.setnavMenuVisible(!this.hidemenu)
   }
 }
